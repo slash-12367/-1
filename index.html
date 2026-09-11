@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Молодежный фотограф</title>
+    <link type="image/x-icon" href="img/logo.ico" rel="shortcut icon">
+    <link rel="stylesheet" href="style.css"> 
+    <script type="text/javascript" src="app.js" defer=""></script>
+
+</head>
+<body>
+
+  <header>
+
+    <div class="logo">
+        <img src="img/logo.png">
+    </div>
+
+    <h1 class="site-title">Фотостудия "КВИК"</h1>
+
+    <nav>
+        <ul>
+            <li><a href="#section1">О фотографе</a></li>
+            <li><a href="#section2">Примеры фото</a></li>
+        </ul>
+    </nav>
+
+  </header>
+    
+
+
+    <div class="slider-container">
+        <div class="slider">
+          <img src="img/1.png"  height="200px" onclick="openFullscreenImage(this)">
+          <img src="img/2.png"  height="200px" onclick="openFullscreenImage(this)">
+          <img src="img/3.png"  height="200px" onclick="openFullscreenImage(this)">
+          <img src="img/4.png"  height="200px" onclick="openFullscreenImage(this)">
+        </div>
+        <button class="prev-button" aria-label="Посмотреть предыдущий слайд">&lt;</button>
+        <button class="next-button" aria-label="Посмотреть следующий слайд">&gt</button>  
+    </div>
+
+    <section id="section1">
+
+      <div class="text_o_nas">
+        <h1>О фотографе:</h1>
+        <p>ПРИВЕД МЕДВЕД, мы молодежная фотостудия йоу.
+        </p>
+        <p>Мы, показываем красоты окружающего мира, проявляющиеся в разных местах мира. Наши фото это тебе не заставка на пк, это ИССКУСТВО.
+        </p>
+        <p>Так-то мы не только в студии работаем, на выезные сьемки тоже ездим. МОжете посмотреть примеры наших работ тут. МЫ КРУЧЕ ЧЕМ КАКИЕ ТО ТАМ ДЖОНЫ
+        </p>
+      </div>
+
+
+    </section>
+
+
+    <section id="section2">
+      
+      <div class="column-container">
+
+        <div class="column">
+            <h2>Солдат устал</h2>
+            <img src="img/5.png" class="pic" onclick="openFullscreenImage(this)">
+            <p>Эта картина отражает реальность современности, показывая.... Бла бла бла мы не занимаемся политикой, мы же фотографы емае.</p>
+        </div>
+
+        <div class="column">
+            <h2>Секретные места Подзалупинска</h2>
+            <img src="img/6.png" class="pic" onclick="openFullscreenImage(this)">
+            <p>Недавно мы были на фотосессии с крутым молодежным скейтером... они же до сих пор популярны да? Он показал нам секретные места удивительного города Подзалупинск, который располагаентся на юге Рсссии.</p>
+        </div>
+
+        <div class="column">
+            <h2>За секунды до</h2>
+            <img src="img/7.png" class="pic" onclick="openFullscreenImage(this)">
+            <p>Это фото запечатляет невероятный кадр! Рандомный парень что мы снимали без его разрежения сделал какой-то крутой трюк, и мы его запептлили. Через секунду после этого он упал.... УДАЧНЫЙ КАДР!</p>
+        </div>
+
+      </div>
+
+    <div class="column-container">
+
+        <div class="column">
+            <h2>Глупый судья в ванне</h2>
+            <img src="img/8.png" class="pic" onclick="openFullscreenImage(this)">
+            <p>Иногда нам поступают, так скзать, странные заказы но даже несмотря на их обсурдность за деньги мы готовы сделать что угодно, ЧТО УГОДНО ПРОСТО СДЕЛАЙТЕ У НАС ЗАКАЗ ЧЕРЕЗ СОЦИЛЬНЫЕ СЕТИ. В любом случае вот что об этой фотосессии говорит наш фотограф:"Это просто ******, после этого заказа я увольняюсь. Этот человек как ****** Вильям Дефо.". Похоже мы потеряем фотографа.
+              </p>
+        </div>
+
+        <div class="column">
+            <h2>ДАЖЕ ПРИГОЖИН...</h2>
+            <img src="img/9.png" class="pic" onclick="openFullscreenImage(this)">
+            <p>Пользовался нашими фотоуслугами, поэтому ТЕБЕ ТОЖЕ СТОИТ!!!!! </p>
+        </div>
+
+        <div class="column">
+            <h2>Рыбалка с друзьями</h2>
+            <img src="img/10.png" class="pic" onclick="openFullscreenImage(this)">
+            <p>Парочка старообрядных ковбоев попросила у нас о фотосессии на рыбалке в стиле первородной фотографии. Они правда нам не заплатили.... Мы взяли у них улов, это было пару карасей. Надеюсь на это мы сможем оплатить нашу аренду ,так же?</p>
+        </div>
+
+    </div>
+
+    <div id="fullscreen-container" class="hidden">
+      <span class="close-button" onclick="closeFullscreenImage()">&times;</span>
+      <img src="" alt="Полноэкранное изображение" id="fullscreen-image">
+    </div>
+
+    </section>
+
+</body>
+
+<footer style="width: 100%;">
+
+  <div class="social-icons">
+    <a href="https://web.telegram.org/" class="social-icon"><img src="img/tg.webp" alt="Tg"></a>
+    <a href="https://m.vk.com/" class="social-icon"><img src="img/vk.png" alt="Vk"></a>
+    <a href="https://www.instagram.com/" class="social-icon"><img src="img/ig.png" alt="Ig"></a>
+  </div>
+  
+</footer>
+
+
+</html>
